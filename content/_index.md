@@ -22,9 +22,9 @@ The shared [hugo-styles](https://oer-particle-physics.github.io/hugo-styles/docs
 {{< /hextra/hero-subtitle >}}
 </div>
 
-<!-- <div class="hx:mb-6">
-{{< hextra/hero-button text="Get Started" link="episodes/01-getting-started/" >}}
-</div> -->
+<div class="hx:mb-6">
+{{< hextra/hero-button text="Get Started" link="episodes/01-introduction/" >}}
+</div>
 
 <div class="hx:mt-6"></div>
 
@@ -33,7 +33,7 @@ The shared [hugo-styles](https://oer-particle-physics.github.io/hugo-styles/docs
   title="First-run path"
   subtitle="Follow the getting-started page in order: setup, metadata, then content replacement."
   icon="book-open"
-  link="episodes/01-getting-started/"
+  link="episodes/01-introduction/"
 >}}
 {{< hextra/feature-card
   title="Shared docs"
