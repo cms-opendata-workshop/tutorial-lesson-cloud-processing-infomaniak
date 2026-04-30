@@ -22,9 +22,9 @@ The shared [hugo-styles](https://oer-particle-physics.github.io/hugo-styles/docs
 {{< /hextra/hero-subtitle >}}
 </div>
 
-<div class="hx:mb-6">
+<!-- <div class="hx:mb-6">
 {{< hextra/hero-button text="Get Started" link="episodes/01-getting-started/" >}}
-</div>
+</div> -->
 
 <div class="hx:mt-6"></div>
 
