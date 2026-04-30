@@ -1,12 +1,12 @@
-baseURL = "https://example.github.io/example-lesson/"
-title = "Example Lesson"
+baseURL = "https://cms-opendata-workshop.github.io/tutorial-lesson-cloud-processing-infomaniak/"
+title = "CMS Open Data on Infomaniak"
 languageCode = "en-us"
 enableGitInfo = true
 disableKinds = ["taxonomy", "term", "RSS"]
 
 [module]
   [[module.imports]]
-    path = "github.com/oer-particle-physics/hugo-styles"
+    path = "github.com/cms-opendata-workshop/tutorial-lesson-cloud-processing-infomaniak/"
     [[module.imports.mounts]]
       source = "archetypes"
       target = "archetypes"
@@ -36,12 +36,12 @@ disableKinds = ["taxonomy", "term", "RSS"]
       unsafe = true
 
 [params.lesson]
-  title = "Example Lesson"
-  tagline = "A thin downstream lesson built on the shared hugo-styles module."
+  title = "CMS Open Data processing on Infomaniak cloud resources"
+  tagline = "Self-guided lesson for setting up CMS Open data processing on Infomaniak cloud resources."
   description = "Replace this metadata with your own tutorial details."
-  contact = "team@example.org"
-  repo = "https://github.com/oer-particle-physics/hugo-styles-template"
-  docsRepo = "https://github.com/oer-particle-physics/hugo-styles-template"
+  contact = "kati.lassila-perini@cern.ch"
+  repo = "https://github.com/cms-opendata-workshop/tutorial-lesson-cloud-processing-infomaniak/"
+  docsRepo = "https://github.com/cms-opendata-workshop/tutorial-lesson-cloud-processing-infomaniak/"
   editBranch = "main"
   copyrightHolder = "the authors"
   licenseName = "CC BY 4.0"
@@ -147,7 +147,7 @@ disableKinds = ["taxonomy", "term", "RSS"]
       type = "search"
   [[menus.main]]
     name = "GitHub"
-    url = "https://github.com/oer-particle-physics/hugo-styles-template"
+    url = "https://github.com/cms-opendata-workshop/tutorial-lesson-cloud-processing-infomaniak/"
     weight = 90
     [menus.main.params]
       icon = "github"
