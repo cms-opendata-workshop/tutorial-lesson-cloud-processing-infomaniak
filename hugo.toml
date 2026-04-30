@@ -6,7 +6,7 @@ disableKinds = ["taxonomy", "term", "RSS"]
 
 [module]
   [[module.imports]]
-    path = "github.com/cms-opendata-workshop/tutorial-lesson-cloud-processing-infomaniak/"
+    path = "github.com/oer-particle-physics/hugo-styles"
     [[module.imports.mounts]]
       source = "archetypes"
       target = "archetypes"
