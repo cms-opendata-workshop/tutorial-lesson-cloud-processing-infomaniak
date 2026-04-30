@@ -51,6 +51,4 @@ If you plan to update `_vendor/` locally, install Go and verify with `go version
 
 ## Next step
 
-Once `hugo version` and `hugo server` work, return to
-[Getting started]({{< relref "/episodes/01-getting-started" >}})
-and continue with step 2: update `hugo.toml` before replacing the sample content.
+Once done, return to ({{< relref "/episodes/01-introduction" >}}).
