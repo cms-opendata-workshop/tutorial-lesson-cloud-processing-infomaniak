@@ -20,12 +20,14 @@ We assume that you would want to download the output files to your local area an
 
 ## Infomaniak
 
-Public cloud providers are companies that offers computing resources and services over the internet to multiple users or organizations. Infomaniak is one of them, but certainly less known than its big competitors. You define and deploy the resources that you need and pay for what you use. As many other such resource providers (for example Google Cloud Platform, AWS, Azure, OHV), it offers some free getting-started “credits”.
+Public cloud providers are companies that offers computing resources and services over the internet to multiple users or organizations. [Infomaniak](https://www.infomaniak.com/en/hosting/public-cloud) is one of them: a Swiss company, less known than its big competitors. You define and deploy the resources that you need and pay for what you use. As many other such resource providers (for example Google Cloud Platform, AWS, Azure, OHV), it offers some free getting-started “credits”.
 
 {{< callout type="note" title="Note" >}}
-Infomaniak offers free trial credits for 300 CHF for a new account. This credit is valid for 90 days. 
+Infomaniak offers free trial credits for 300 CHF for a new account. This credit is valid for 90 days.
+{{< /callout >}}
 
-It is also consirerably less expensive than the other providers, as you will if you compare the observed cost of this same example [using Google Cloud Platform](https://cms-opendata-workshop.github.io/tutorial-lesson-cloud-processing-gcp/index.html). 
+{{< callout type="note" title="Note" >}}
+Infomaniak resources is also consirerably less expensive than those of the other providers, as you will if you compare the observed cost of this same example [using Google Cloud Platform](https://cms-opendata-workshop.github.io/tutorial-lesson-cloud-processing-gcp/index.html). 
 {{< /callout >}}
 
 

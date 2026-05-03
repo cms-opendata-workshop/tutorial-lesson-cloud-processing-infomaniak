@@ -9,16 +9,15 @@ Shared module docs {{< icon name="arrow-circle-right" attributes="height=14" >}}
 
 <div class="hx:mt-6 hx:mb-6">
 {{< hextra/hero-headline >}}
-Launch a lesson&nbsp;
+CMS open data&nbsp;
 <br class="hx:xl:block hx:hidden" />
-without copying framework code
+processing on Infomaniak cloud resources
 {{< /hextra/hero-headline >}}
 </div>
 
 <div class="hx:mb-12">
 {{< hextra/hero-subtitle >}}
-Start with local setup checks, then update `hugo.toml`, then replace the sample content.
-The shared [hugo-styles](https://oer-particle-physics.github.io/hugo-styles/docs/quickstart/) docs provide the authoring, deployment, and update guidance while this template stays focused on lesson-specific files.
+Learn to run a typical CMS open data processing job using public cloud resources from Infomaniak.
 {{< /hextra/hero-subtitle >}}
 </div>
 
@@ -30,21 +29,21 @@ The shared [hugo-styles](https://oer-particle-physics.github.io/hugo-styles/docs
 
 {{< hextra/feature-grid cols="3" >}}
 {{< hextra/feature-card
-  title="First-run path"
-  subtitle="Follow the getting-started page in order: setup, metadata, then content replacement."
+  title="Setup"
+  subtitle="Prepare your computing environment to interact with computing and storage resources on cloud."
   icon="book-open"
-  link="episodes/01-introduction/"
+  link="learners/setup/"
 >}}
 {{< hextra/feature-card
-  title="Shared docs"
-  subtitle="Use the shared `hugo-styles` docs for authoring, deployment, and update guidance after the site is running."
+  title="Learn more"
+  subtitle="Learn more about CMS open data by working through the tutorials in one of our workshops."
   icon="academic-cap"
-  link="https://oer-particle-physics.github.io/hugo-styles/docs/quickstart/"
+  link="https://cms-opendata-guide.web.cern.ch/cmsOpenData/workshops/"
 >}}
 {{< hextra/feature-card
-  title="Setup checks"
-  subtitle="Verify Hugo Extended first. Go stays optional for normal authoring because `_vendor/` is committed."
-  icon="sparkles"
+  title="Understand pricing"
+  subtitle="This tutorial gives an estimate of the cost and time needed for a typical processing task"
+  icon="scale"
   link="learners/setup/"
 >}}
 {{< /hextra/feature-grid >}}
