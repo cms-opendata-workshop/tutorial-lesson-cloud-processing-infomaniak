@@ -19,11 +19,11 @@ Storage resources are separate from the cluster computing resources. You can del
 
 
 {{< callout type="prereq" title="Prerequisites" >}}
-- [ ] You will need the Infomaniak account and a public cloud project. See the [Setup]({{< relref "/learners/setup/#infomaniak" >}}) instructions.
-- [ ] You will need to have the tutorial code in your local working environment and the software needed to handle storage installed. See the [Setup]({{< relref "/learners/setup/#software-setup" >}}) instructions.
+- You will need the Infomaniak account and a public cloud project. See the [Setup]({{< relref "/learners/setup/#infomaniak" >}}) instructions.
+- You will need to have the tutorial code in your local working environment and `openstack` and `swift` - i.e. the software needed to handle storage - installed. See the [Setup]({{< relref "/learners/setup/#software-setup" >}}) instructions.
 {{< /callout >}}
 
-Move to your local working environment and get the access to the storarge by sourcing the OpenStack RC file that you have downloaded previously.
+Move to your local working environment and get the access to the storage by sourcing the OpenStack RC file that you have downloaded previously.
 If you use a virtual environment, activate it.
 
 
