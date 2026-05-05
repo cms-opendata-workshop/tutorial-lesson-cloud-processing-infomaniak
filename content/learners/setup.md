@@ -19,7 +19,7 @@ To start the [free trial for cloud resources](https://www.infomaniak.com/en/host
 
 Choose "Cloud Computing" from the left bar and select "Public Cloud".
 
-![A screenshot from the Public Cloud initial page.](fig/InfomaniakPublicCloud.png)
+![A screenshot from the Cloud Computing dashboard initial page.](fig/InfomaniakPublicCloud.png)
 
 
 Click on "Order a Public Cloud" and give it a name. In the following steps:
@@ -32,7 +32,7 @@ Click on "Order a Public Cloud" and give it a name. In the following steps:
 Creating your "Public Cloud" might take a while. First, after some time after placing the order, a request for ID verification will appear on the [Administration console](https://manager.infomaniak.com/). 
 You will be asked to install Infomaniak Check app on your phone. You will be shown a QR code which you can scan with the app. To identify, you will need to scan your passport or ID card, and take a selfie with that document. Then, once the verification is ready, your project will appear on the [Cloud Computing dashboard](https://manager.infomaniak.com/v3/ng/products/cloud/public-cloud).
 
-![A screenshot from the Public Cloud page with the listing.](fig/InfomaniakPublicCloudCreated.png)
+![A screenshot from the Cloud Computing dashboard page with the listing.](fig/InfomaniakPublicCloudCreated.png)
 
 
 {{< callout type="note" title="Trial period" >}}

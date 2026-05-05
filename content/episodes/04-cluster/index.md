@@ -44,12 +44,12 @@ You can use filter options to find them.
 ![A screenshot from the instance pool creation with the filter option visible.](fig/InfomaniakClusterInstances.png)
 
 Select the options and click on Next. Keep the instance management "Manual", and choose the number of nodes. For testing, a small cluster of two nodes is enough. 
-Click on "Order". You will see the cluster being scaled up on the Control plane:
+Click on "Order". You will see the cluster being scaled up on the Control panel:
 
 ![A screenshot from the cluster control panel with the cluster being scaled up](fig/InfomaniakClusterScaling.png)
 
 This will take some time, typically less than one hour.
-While waiting you can follow the link on the Controil panel read more about Kubernetes in their [docs](https://kubernetes.io/docs/home/).
+While waiting you can follow the link on the Control panel read more about Kubernetes in their [docs](https://kubernetes.io/docs/home/).
 
 
 ## Connect to the cluster
@@ -57,7 +57,7 @@ While waiting you can follow the link on the Controil panel read more about Kube
 In your working directory, set the KUBECONFIG variable so that you can connect to the cluster (replace `XXXXXX` with what you have in your downloaded):
 
 ```bash
-export KUBECONFIG=pck-XXXXXX-kubeconfig
+export KUBECONFIG=<path_to_config_file_if_not_local/>pck-XXXXXX-kubeconfig
 ```
 
 Check the connection to your cluster with:
@@ -100,6 +100,7 @@ Make sure to wait for all cluster nodes to be schedulable. The `kubectl` command
 You can find the current prices in the [Infomaniak cloud services pricing details](https://www.infomaniak.com/en/hosting/public-cloud/prices).
 {{< /callout >}}
 
+
 ### Cluster management
 
 There's a cluster managemement fee that depends on the type of the control plane. For the one used in this tutorial it about 0.04 €/hour, independent of the cluster size.
@@ -107,3 +108,7 @@ There's a cluster managemement fee that depends on the type of the control plane
 ### CPU and memory
 
 For the type of nodes (4 vCPUs, 16 GB RAM, 80 GB disk) that we use for this tutorial, the cost of one computing node is about 0.03 €/hour.
+
+{{< callout type="warning" title="Do not keep unused clusters" >}}
+As the costs depend on the cluster being available, not on the usage, take the habit of deleting the clusters if you do not plan to use them for a while. The small test cluster you just created in this lesson costs only 0.1 €/hour, but large clusters left idle for a longer time can make an unpleasant surprise in your computing budget. But if you continue the lesson, do not delete the cluster yet.
+{{< /callout >}}
