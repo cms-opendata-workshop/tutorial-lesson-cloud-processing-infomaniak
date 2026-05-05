@@ -4,7 +4,7 @@ weight = 10
 teaching = 10
 exercises = 10
 questions = ["What are public cloud providers?", "Why would you use them?", "What is Kubernetes?", "What else do you need?"]
-objectives = ["Explain the motivation for using a Kubernetes cluster from public cloud providers.", "Explain the tools used to set up the Kubernetes cluster and run the processing workflow."]
+objectives = ["Understand the motivation for using a Kubernetes cluster from public cloud providers.", "Learn the tools used to set up the Kubernetes cluster and run the processing workflow."]
 keypoints = ["Public cloud providers are companies that offer pay-as-you-go computing resources and services over the internet to multiple users or organizations.", "Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications and their associated workflows across clusters of host machines.", "Argo Workflows is an open-source tool for orchestrating sequential and parallel jobs on Kubernetes."]
 +++
 
@@ -20,14 +20,14 @@ We assume that you would want to download the output files to your local area an
 
 ## Infomaniak
 
-Public cloud providers are companies that offers computing resources and services over the internet to multiple users or organizations. [Infomaniak](https://www.infomaniak.com/en/hosting/public-cloud) is one of them: a Swiss company, less known than its big competitors. You define and deploy the resources that you need and pay for what you use. As many other such resource providers (for example Google Cloud Platform, AWS, Azure, OHV), it offers some free getting-started “credits”.
+Public cloud providers are companies that offers computing resources and services over the internet to multiple users or organizations. [Infomaniak](https://www.infomaniak.com/en/hosting/public-cloud) is one of them: it is a Swiss company, less known than its big competitors. You define and deploy the resources that you need and pay for what you use. As many other such resource providers (for example Google Cloud Platform, AWS, Azure, OHV), it offers some free getting-started “credits”.
 
 {{< callout type="note" title="Note" >}}
 Infomaniak offers free trial credits for 300 CHF for a new account. This credit is valid for 90 days.
 {{< /callout >}}
 
 {{< callout type="note" title="Note" >}}
-Infomaniak resources is also consirerably less expensive than those of the other providers, as you will if you compare the observed cost of this same example [using Google Cloud Platform](https://cms-opendata-workshop.github.io/tutorial-lesson-cloud-processing-gcp/index.html). 
+Infomaniak resources are also consirerably less expensive than those of the other providers, as you will note if you compare the observed cost of this same example [using Google Cloud Platform](https://cms-opendata-workshop.github.io/tutorial-lesson-cloud-processing-gcp/index.html). 
 {{< /callout >}}
 
 

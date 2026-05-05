@@ -8,7 +8,7 @@ weight = 10
 
 ### Account and project
 
-Create an account by following "Get started for free" from the Infomaniak entry page. 
+Create an Infomaniak account by following "Get started for free" from the [Infomaniak entry page](https://www.infomaniak.com/). 
 
 {{< callout type="note" title="Free resources" >}}
 Note that in addition to cloud computing resources, which we will use for this tutorial, Infomaniak also offers a [comprehensive set of collaborative tools](https://www.infomaniak.com/en/special-offers?filter=free) (including e-mail, cloud storage, and many other services) for free, permanently.
@@ -46,7 +46,7 @@ Start a project following the [Infomaniak instructions](https://www.infomaniak.c
 Note the two layers in the Infomaniak structure. There is the **product**, in our case the "Public Cloud", and, below it, the **project** that we just created. The cloud resources needed in this tutorial are created in the project.
 {{< /callout >}}
 
-The OpenStack password that is created will be needed to access the storage in this tutorial.
+The OpenStack password that you will be asked to define will be needed to access the storage in this tutorial. Do not forget it!
 
 ### OpenStack access
 
