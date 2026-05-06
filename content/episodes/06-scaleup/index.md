@@ -79,10 +79,10 @@ This has not been implemented in this tutorial example to keep it simple.
 The processing over the full example dataset took 8 hours, including setup.
 The resulting cost of the cluster was 14 CHF. The graph below shows comparison with the earlier work using different cluster configurations and node types on Google Cloud Platform (GCP).
 
-![A graph showing the processing of the same benchmark job on Google Cloud Platform and on Infomaniak cluster showing that the cost of Informaniak resources is less than 20% of those on GCP - comparing 14 CHF to 77 CHF.](fig/ProcessingCostComparison.png)
+![A graph showing the processing of the same benchmark job on Google Cloud Platform and on Infomaniak cluster showing that the cost of Infomaniak resources is less than 20% of those on GCP - comparing 14 CHF to 77 CHF.](fig/ProcessingCostComparison.png)
 
 {{< callout type="testimonial" title="Note the difference!" >}}
-The cost of CMS open Data processing on Infomaniak resources is significantly less expensive than on GCP: it is less than one fith of the GCP cost. In addition, processing runs faster on similar type of nodes. 
+The cost of CMS open Data processing on Infomaniak resources is significantly less expensive than on GCP: it is less than one fifth of the GCP cost. In addition, processing runs faster on similar type of nodes. 
 
-Also to be considered, and not shown in the graph: the download from Infomaniak storage is free for the 10 first TB per month and then 0.00811 €/GB. This is to be compared to the Google Cloud Storage dowload cost of 0.12 USD/GB.
+Also to be considered, and not shown in the graph: the download from Infomaniak storage is free for the 10 first TB per month and then 0.00811 €/GB. This is to be compared to the Google Cloud Storage download cost of 0.12 USD/GB.
 {{< /callout >}}

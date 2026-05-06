@@ -113,7 +113,7 @@ kubectl create secret generic s3-credentials \
 
 ## Simple test job
 
-The example code repository has a simple Argo workflow configuratîon example to test the storage access. It uses the credentials that were just created as cluster secrets.
+The example code repository has a simple Argo workflow configuration example to test the storage access. It uses the credentials that were just created as cluster secrets.
 
 Submit the test job with
 
@@ -221,10 +221,10 @@ It consists of four tasks.
 #### Reading the metadata for the dataset to be processed
 
 - uses the cernopendata-client container image
-- reads the filelist (each dataset consists of several files)
+- reads the file list (each dataset consists of several files)
 - gets data type (collision or simulated data)
 
-#### Preparing the joblist
+#### Preparing the job list
 
 - the processing jobs can run parallel and input data needs to be assigned to them evenly
 - it is convenient to have one or more entire files to process in one job
@@ -232,7 +232,7 @@ It consists of four tasks.
 
 #### Pulling the big CMSSW container image to each cluster node
 
-- this is to avoid multiple simultanous image pulls for parallel jobs on the same node
+- this is to avoid multiple simultaneous image pulls for parallel jobs on the same node
 
 #### Running the processing task
 
@@ -274,7 +274,7 @@ The default input values are for a 45-node cluster and to process all 353 files 
       value: 2
 ```
 
-This will share the full filelist in eight parts, pass them to the processing step which will then process 1000 first events in the respective files. 
+This will share the full file list in eight parts, pass them to the processing step which will then process 1000 first events in the respective files. 
   
 #### Submit the job 
 

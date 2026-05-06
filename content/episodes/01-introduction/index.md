@@ -27,7 +27,7 @@ Infomaniak offers free trial credits for 300 CHF for a new account. This credit 
 {{< /callout >}}
 
 {{< callout type="note" title="Note" >}}
-Infomaniak resources are also consirerably less expensive than those of the other providers, as you will note if you compare the observed cost of this same example [using Google Cloud Platform](https://cms-opendata-workshop.github.io/tutorial-lesson-cloud-processing-gcp/index.html). 
+Infomaniak resources are also considerably less expensive than those of the other providers, as you will note if you compare the observed cost of this same example [using Google Cloud Platform](https://cms-opendata-workshop.github.io/tutorial-lesson-cloud-processing-gcp/index.html). 
 {{< /callout >}}
 
 

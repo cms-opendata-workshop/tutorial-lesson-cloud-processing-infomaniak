@@ -4,7 +4,7 @@ weight = 20
 teaching = 15
 exercises = 10
 questions = [" How to create an object storage container on Infomaniak resources?", "What are the basic operations?", "What are the costs of storage and download?"]
-objectives = ["Learn to create a persistent storage for the job output.", "Learn to list the contents of the storage.","Understand the persistant storage costs."]
+objectives = ["Learn to create a persistent storage for the job output.", "Learn to list the contents of the storage.","Understand the persistent storage costs."]
 keypoints = ["The storage cost depends on the volume stored and the duration of storage, and for this type of processing is very small."]
 +++
 
@@ -92,7 +92,7 @@ Do not confuse it with the project ID that starts with `PCP`.
 {{< /callout >}}
 
 {{< callout type="warning" title="Dashboard region" >}}
-To see your resouces, you need to select the region that you have chosen when downloading the OpenStack RC file from the dashboard top bar. You can check the region name in the OpenStack RC file, or in your working environment with `echo $OS_REGION_NAME`. 
+To see your resources, you need to select the region that you have chosen when downloading the OpenStack RC file from the dashboard top bar. You can check the region name in the OpenStack RC file, or in your working environment with `echo $OS_REGION_NAME`. 
 {{< /callout >}}
 
 You will find the storage container by choosing "Object Store" from the left bar.
@@ -115,7 +115,7 @@ $ swift download mystorage test.txt -o -
 Storage test
 ```
 
-A download option is also available from the Horizon dasboard
+A download option is also available from the Horizon dashboard
 
 #### Delete
 

@@ -30,7 +30,7 @@ In the Kubernetes services box, click on "Create a cluster" and from the availab
 The selection of the actual computing nodes comes after.
 
 {{< callout type="note" title="More information" >}}
-You can learm more about the cluster architecture (and more) in the [Kubernetes documentation](https://kubernetes.io/docs/concepts/architecture/)
+You can learn more about the cluster architecture (and more) in the [Kubernetes documentation](https://kubernetes.io/docs/concepts/architecture/)
 {{< /callout >}}
 
 Give a name to the cluster, and keep the defaults for the other options. Click on "Order". The cluster creation takes some time, 10 minutes or so. If you follow the link to the Control Panel, you will see that the creation is in progress, and once done, you see it marked as "Active":
@@ -103,7 +103,7 @@ You can find the current prices in the [Infomaniak cloud services pricing detail
 
 ### Cluster management
 
-There's a cluster managemement fee that depends on the type of the control plane. For the one used in this tutorial it is about 0.04 €/hour, independent of the cluster size.
+There's a cluster management fee that depends on the type of the control plane. For the one used in this tutorial it is about 0.04 €/hour, independent of the cluster size.
 
 ### CPU and memory
 
