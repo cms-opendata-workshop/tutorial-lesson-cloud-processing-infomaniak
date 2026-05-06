@@ -39,13 +39,13 @@ Create a namespace
 kubectl create ns argo
 ```
 
-Argo workflows controller and server can be set up in an existing cluster with
+Set up Argo workflows controller and server with
 
 ```bash
 kubectl apply -n argo --server-side -f https://github.com/argoproj/argo-workflows/releases/download/v4.0.1/install.yaml
 ```
 
-A service account and its roles and bindings can be deployed with
+Deploy a service account and its roles and bindings with
 
 ```bash
 kubectl apply -f manifests/
@@ -113,7 +113,7 @@ kubectl create secret generic s3-credentials \
 
 ## Simple test job
 
-The example code repository has a simple argo workflow example to test the storage access. It uses the credentials that were just created as cluster secrets.
+The example code repository has a simple Argo workflow configiratîon example to test the storage access. It uses the credentials that were just created as cluster secrets.
 
 Submit the test job with
 
@@ -298,7 +298,7 @@ Parameters:
 
 #### Follow the progress
 
-Observe the progress - you will see that the first two steps go fast but the prepull step takes long:
+Observe the progress - you will see that the first two steps go fast but the prepull step takes longer:
 
 ```bash
 $ argo get @latest -n argo

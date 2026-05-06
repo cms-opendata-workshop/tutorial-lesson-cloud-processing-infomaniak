@@ -166,4 +166,4 @@ This tutorial uses a CMSSW open data container image with the [pfnano producer c
 
 ## Next step
 
-Once done, get started in [Introduction]({{< relref "/episodes/01-introduction" >}}).
+Once done, read the [Introduction]({{< relref "/episodes/01-introduction" >}}), or continue directly to [Storage for the output files]({{< relref "/episodes/02-storage" >}}).

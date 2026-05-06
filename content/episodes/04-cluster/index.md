@@ -18,11 +18,15 @@ keypoints = ["Kubernetes clusters can be created from the Web GUI", "`kubectl` i
 
 ## Create the cluster
 
+{{< callout type="note" title="Terraform" >}}
+[Terraform scripts](https://registry.terraform.io/providers/Infomaniak/infomaniak/latest/docs) are available for command-line provisioning of resources. In this tutorial, however, we do it through the Infomaniak Web GUI.
+{{< /callout >}}
+
 Go to the project view from the [Cloud Computing dashboard](https://manager.infomaniak.com/v3/ng/products/cloud/public-cloud):
 
 ![A screenshot from the cloud computing project page with the option to create a cluster visible.](fig/InfomaniakProjectPage.png)
 
-Click on "Create a cluster" and from the available options, choose "Cluster Dedicated 4". This selection is for the control plane, i.e. for the part of the cluster that runs various software component to make the cluster work.
+In the Kubernetes services box, click on "Create a cluster" and from the available options, choose "Cluster Dedicated 4". This selection is for the control plane, i.e. for the part of the cluster that runs various software component to make the cluster work.
 The selection of the actual computing nodes comes after.
 
 {{< callout type="note" title="More information" >}}
@@ -43,7 +47,7 @@ You can use filter options to find them.
 
 ![A screenshot from the instance pool creation with the filter option visible.](fig/InfomaniakClusterInstances.png)
 
-Select the options and click on Next. Keep the instance management "Manual", and choose the number of nodes. For testing, a small cluster of two nodes is enough. 
+Select this option and click on Next. Keep the instance management "Manual", and choose the number of nodes. For testing, a small cluster of two nodes is enough. 
 Click on "Order". You will see the cluster being scaled up on the Control panel:
 
 ![A screenshot from the cluster control panel with the cluster being scaled up](fig/InfomaniakClusterScaling.png)
@@ -99,7 +103,7 @@ You can find the current prices in the [Infomaniak cloud services pricing detail
 
 ### Cluster management
 
-There's a cluster managemement fee that depends on the type of the control plane. For the one used in this tutorial it about 0.04 €/hour, independent of the cluster size.
+There's a cluster managemement fee that depends on the type of the control plane. For the one used in this tutorial it is about 0.04 €/hour, independent of the cluster size.
 
 ### CPU and memory
 

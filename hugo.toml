@@ -38,15 +38,15 @@ disableKinds = ["taxonomy", "term", "RSS"]
 [params.lesson]
   title = "CMS Open Data processing on Infomaniak cloud resources"
   tagline = "Self-guided lesson for setting up CMS Open data processing on Infomaniak cloud resources."
-  description = "Replace this metadata with your own tutorial details."
+  description = "Set of instructions to set up storage resources and a Kubernetes cluster on Infomaniak resources, and to run processing of CMS MINIAOD Open Data to add content to the standard NanoAOD."
   contact = "kati.lassila-perini@cern.ch"
   repo = "https://github.com/cms-opendata-workshop/tutorial-lesson-cloud-processing-infomaniak/"
   docsRepo = "https://github.com/cms-opendata-workshop/tutorial-lesson-cloud-processing-infomaniak/"
   editBranch = "main"
-  copyrightHolder = "the authors"
+  copyrightHolder = "Kati Lassila-Perini"
   licenseName = "CC BY 4.0"
   licenseURL = "https://creativecommons.org/licenses/by/4.0/"
-  lifecycle = "alpha"
+  lifecycle = "beta"
   defaultView = "learner"
   enableSidebarNumbering = true
 

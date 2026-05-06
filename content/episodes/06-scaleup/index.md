@@ -2,9 +2,9 @@
 title = "Scaling up"
 weight = 60
 teaching = 15
-exercises = 10
-questions = ["How to process a full dataset?","What is an optimal cluster setup?","What is an optimal job configuration?"]
-objectives = ["Optimize the cluster setup for a full dataset processing.","Learn about job configuration."]
+exercises = 0
+questions = ["What is an optimal cluster setup?","What is an optimal job configuration?", "How much does it cost?"]
+objectives = ["Optimize the cluster setup for a full dataset processing.","Learn about job configuration.", "Get an idea of cost and time need for full-scale processing."]
 keypoints = ["The resource request should be set so that one job runs in one vCPU.", "The optimal number of nodes in a cluster depends on the number of files in the dataset, and it should be chosen so that each job has the same number of files.", "For the benchmarking task of processing an entire CMS dataset, Infomaniak resources were found to be remarkably less expensive."]
 +++
 
@@ -39,7 +39,7 @@ The disk size requirement limits the possibility of using nodes with more than 4
 
 In the example case, we have used the [MuonEG MiniAOD dataset](https://opendata.cern.ch/record/30511) with 353 input files. For that number of files, we deployed a cluster with 45 nodes 4-vCPU nodes, providing a total of 180 vCPUs.
 
-We first make sure that the large CMSSW image is present on each node. This is done in a prepull step with an artificial resource request requiring more than half of the available vCPUs, making sure that only one pull happen per node. In this cluster configuration, we require 3 CPUs as the nodes have 4 vCPUs
+We first make sure that the large CMSSW image is present on each node. This is done in a prepull step with an artificial resource request requiring more than half of the available vCPUs, making sure that only one pull happens per node. In this cluster configuration, we require 3 CPUs as the nodes have 4 vCPUs
 
 ```yaml
       resources:
@@ -47,9 +47,9 @@ We first make sure that the large CMSSW image is present on each node. This is d
           cpu:  "3"
 ```
 
-Note that this needs to be changed 
+Note that this value needs to be changed is the node has more (or less) than 4 vCPUs. 
 
-For the processing, we define a workflow with 353 jobs, and set the resource request so that one job run on each vCPU at a time. The relevant part of the workflow definition is the resource request of the final processing step:
+For the processing, we define a workflow with 353 jobs, and set the resource request so that one job runs on each vCPU at a time. The relevant part of the workflow definition is the resource request of the final processing step:
 
 ```yaml
       resources:
@@ -57,7 +57,7 @@ For the processing, we define a workflow with 353 jobs, and set the resource req
           cpu: "800m"
 ```
 
-For the processing of the full dataset, this results to running a first set of 180 jobs parallel, and they have completed the remaining 173 willl start. We will have a close to full occupation of the cluster.
+For the processing of the full dataset, this results to running a first set of 180 jobs parallel, and when they complete, the remaining 173 will start. We will have a close to full occupation of the cluster.
 
 ### Autoscaling
 
@@ -76,8 +76,8 @@ This has not been implemented in this tutorial example to keep it simple.
 
 ## Costs
 
-The processing over the full example dataset took 8 hour, including setup.
-The full cost of the cluster for that was 14 CHF. The graph below show comparison with the earlier work using different cluster configurations and node types on Google Cloud Platform (GCP).
+The processing over the full example dataset took 8 hours, including setup.
+The resulting cost of the cluster was 14 CHF. The graph below show comparison with the earlier work using different cluster configurations and node types on Google Cloud Platform (GCP).
 
 ![A graph showing the processing of the same benchmark job on Google Cloud Platform and on Infomaniak cluster showing that the cost of Informaniak resources is less than 20% of those on GCP - comparing 14 CHF to 77 CHF.](fig/ProcessingCostComparison.png)
 

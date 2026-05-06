@@ -51,3 +51,8 @@ The processing workflow consist of some sequential and parallel steps. We use [A
 
 In this tutorial, the Argo Workflows services are set up using a `kubectl` command. We use `argo`, the command-line tool, to submit and manage the workflows.
 
+## Setup
+
+If not yet done, prepare your environment as instructed in [Setup]({{< relref "/learners/setup" >}}).
+
+
