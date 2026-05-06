@@ -91,15 +91,11 @@ Make sure to wait for all cluster nodes to be schedulable. The `kubectl` command
 {{< /callout >}} 
 
 
-
-
-
 ## Costs
 
 {{< callout type="note" title="Pricing details" >}}
 You can find the current prices in the [Infomaniak cloud services pricing details](https://www.infomaniak.com/en/hosting/public-cloud/prices).
 {{< /callout >}}
-
 
 ### Cluster management
 

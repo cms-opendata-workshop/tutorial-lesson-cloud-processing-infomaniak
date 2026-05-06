@@ -414,5 +414,13 @@ This brings to the cluster page where you find the delete option under Manage:
 
 Both the control plane and node pool will be deleted and you are asked to confirm the choice.
 
+## Costs
+
+{{< callout type="note" title="Pricing details" >}}
+You can find the current prices in the [Infomaniak cloud services pricing details](https://www.infomaniak.com/en/hosting/public-cloud/prices).
+{{< /callout >}}
+
+The cost of these quick exercises is less than 0.5 €, depending on the uptime of the cluster (approximately 0.1 €/hour for a small 2-node cluster).
+
 
 
