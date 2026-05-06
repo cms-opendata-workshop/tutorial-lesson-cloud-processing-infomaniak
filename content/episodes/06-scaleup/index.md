@@ -5,7 +5,7 @@ teaching = 15
 exercises = 0
 questions = ["What is an optimal cluster setup?","What is an optimal job configuration?", "How much does it cost?"]
 objectives = ["Optimize the cluster setup for a full dataset processing.","Learn about job configuration.", "Get an idea of cost and time need for full-scale processing."]
-keypoints = ["The resource request should be set so that one job runs in one vCPU.", "The optimal number of nodes in a cluster depends on the number of files in the dataset, and it should be chosen so that each job has the same number of files.", "For the benchmarking task of processing an entire CMS dataset, Infomaniak resources were found to be remarkably less expensive than Google Cloud Platform - 14 CHF instead of 77 CHF."]
+keypoints = ["The resource request should be set so that one job runs in one vCPU.", "The optimal number of nodes in a cluster depends on the number of files in the dataset, and it should be chosen so that each job has the same number of files.", "For the benchmarking task of processing an entire CMS dataset, Infomaniak resources were found to be remarkably less expensive than Google Cloud Platform: 14 CHF instead of 77 CHF."]
 +++
 
 ## Input data

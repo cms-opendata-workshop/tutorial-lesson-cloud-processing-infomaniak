@@ -5,7 +5,7 @@ teaching = 15
 exercises = 0
 questions = ["What was the user experience?", "What worked well?", "What difficulties were observed?"]
 objectives = ["Learn about the practical user experience with CMS open data processing on Infomaniak resources."]
-keypoints = ["Technically, deploying the resources, setting up the workflow and running the processing on Infomaniak was very smooth.", "The Infomaniak support team reacted within the expected delay.", "Considering the ease of setup and very advantegous pricing, Infomaniak is a very convenient choice for small-scale processing by individual researchers."]
+keypoints = ["Technically, deploying the resources, setting up the workflow and running the processing on Infomaniak was very smooth.", "The Infomaniak support team reacted within the expected delay.", "Considering the ease of setup and very advantegous pricing, Infomaniak can be a very convenient choice for small-scale processing by individual researchers."]
 +++
 
 ## What worked?

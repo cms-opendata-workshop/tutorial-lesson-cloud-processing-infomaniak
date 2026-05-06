@@ -58,7 +58,7 @@ While waiting you can follow the link on the Control panel read more about Kuber
 
 ## Connect to the cluster
 
-In your working directory, set the KUBECONFIG variable so that you can connect to the cluster (replace `XXXXXX` with what you have in your downloaded):
+In your working directory, set the KUBECONFIG variable so that you can connect to the cluster (replace `XXXXXX` with what you have in your downloaded file):
 
 ```bash
 export KUBECONFIG=<path_to_config_file_if_not_local/>pck-XXXXXX-kubeconfig

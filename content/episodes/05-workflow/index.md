@@ -1,5 +1,5 @@
 +++
-title = "Setup a workflow"
+title = "Set up a workflow"
 weight = 50
 teaching = 15
 exercises = 30
@@ -113,7 +113,7 @@ kubectl create secret generic s3-credentials \
 
 ## Simple test job
 
-The example code repository has a simple Argo workflow configiratîon example to test the storage access. It uses the credentials that were just created as cluster secrets.
+The example code repository has a simple Argo workflow configuratîon example to test the storage access. It uses the credentials that were just created as cluster secrets.
 
 Submit the test job with
 
@@ -198,7 +198,7 @@ The file is written to the object storage through the output definition:
           key: simple.txt  # the file name for the storage
 ```
 
-It uses an artifact of type S3, and it reads the accedss credentials from the secret that we just created, and writes the new file to the storage container.
+It uses an artifact of type S3, and it reads the access credentials from the secret that we just created, and writes the new file to the storage container.
 
 It is a good practice to delete the job resources after the job has finished.
 You can delete the latest workflow with:
@@ -221,8 +221,8 @@ It consists of four tasks.
 #### Reading the metadata for the dataset to be processed
 
 - uses the cernopendata-client container image
-- reads the filelist (each dataset consists of sevaral files)
-- get data type (collision or simulated data)
+- reads the filelist (each dataset consists of several files)
+- gets data type (collision or simulated data)
 
 #### Preparing the joblist
 
@@ -341,7 +341,7 @@ pfnano-process-949g2-prepull-pfnano-image-647290456     0/2     PodInitializing 
 workflow-controller-57f7bb576d-zd968                    1/1     Running           0          114m
 ```
 
-and you then follow the events with `kubectl describe pod <pod name> -n argo`.
+and you then read the events with `kubectl describe pod <pod name> -n argo`.
 
 Once the processing starts, you will see the jobs running in parallel.
 
