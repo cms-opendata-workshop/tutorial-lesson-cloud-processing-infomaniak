@@ -5,7 +5,7 @@ teaching = 15
 exercises = 0
 questions = ["What is an optimal cluster setup?","What is an optimal job configuration?", "How much does it cost?"]
 objectives = ["Optimize the cluster setup for a full dataset processing.","Learn about job configuration.", "Get an idea of cost and time need for full-scale processing."]
-keypoints = ["The resource request should be set so that one job runs in one vCPU.", "The optimal number of nodes in a cluster depends on the number of files in the dataset, and it should be chosen so that each job has the same number of files.", "For the benchmarking task of processing an entire CMS dataset, Infomaniak resources were found to be remarkably less expensive."]
+keypoints = ["The resource request should be set so that one job runs in one vCPU.", "The optimal number of nodes in a cluster depends on the number of files in the dataset, and it should be chosen so that each job has the same number of files.", "For the benchmarking task of processing an entire CMS dataset, Infomaniak resources were found to be remarkably less expensive than Google Cloud Platform - 14 CHF instead of 77 CHF."]
 +++
 
 ## Input data
@@ -77,7 +77,7 @@ This has not been implemented in this tutorial example to keep it simple.
 ## Costs
 
 The processing over the full example dataset took 8 hours, including setup.
-The resulting cost of the cluster was 14 CHF. The graph below show comparison with the earlier work using different cluster configurations and node types on Google Cloud Platform (GCP).
+The resulting cost of the cluster was 14 CHF. The graph below shows comparison with the earlier work using different cluster configurations and node types on Google Cloud Platform (GCP).
 
 ![A graph showing the processing of the same benchmark job on Google Cloud Platform and on Infomaniak cluster showing that the cost of Informaniak resources is less than 20% of those on GCP - comparing 14 CHF to 77 CHF.](fig/ProcessingCostComparison.png)
 
