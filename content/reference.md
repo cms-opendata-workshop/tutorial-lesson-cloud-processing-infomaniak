@@ -1,79 +1,32 @@
 +++
-title = "Reference"
+title = "More information"
 weight = 60
 +++
 
-Use this page for compact pointers while keeping the lesson repository thin.
+## CMS Open Data
 
-## Start with shared docs
+- CMS records on the CERN Open Data Portal (CODP): [CMS records](https://opendata.cern.ch/search?q=&f=experiment%3ACMS&l=list)
+- CMS Open Data documentation: 
+  - [Short topical guides on COPD](https://opendata.cern.ch/search?q=&f=experiment%3ACMS&f=type%3ADocumentation%2Bsubtype%3AGuide)
+  - [CMS Open Data Guide](https://cms-opendata-guide.web.cern.ch/)
+  - [CMS Open Data workshops with tutorials](https://cms-opendata-guide.web.cern.ch/cmsOpenData/workshops/)
 
-- Shared module docs: [hugo-styles](https://oer-particle-physics.github.io/hugo-styles/)
-- Authoring model: [Authoring Guide](https://oer-particle-physics.github.io/hugo-styles/docs/authoring/)
-- Curated advanced features: [Hextra Features for Physics Lessons](https://oer-particle-physics.github.io/hugo-styles/docs/hextra-features/)
-- Updates and release workflow: [Updating Downstream Lessons](https://oer-particle-physics.github.io/hugo-styles/docs/updates/)
+## HEP Software foundation tutorials
 
-## Why `_vendor/` exists
+- [HSF Training Center](https://hsf-training.org/training-center/)
 
-This template commits `_vendor/` so lesson authors can run `hugo server` without Go installed.
-The vendored tree contains the shared `hugo-styles` module and its theme dependency at pinned versions from `go.mod`.
+## Infomaniak
 
-## Refresh `_vendor/`
+- About: [Main entry page](https://www.infomaniak.com)
+- Documentation: 
+  - [Public Cloud documentation](https://docs.infomaniak.cloud/)
+  - [FAQ](https://www.infomaniak.com/en/support/faq/admin2)
+- Resource management: [Manager view](https://manager.infomaniak.com/)
+- Cloud Computing dashboard: [Cloud Computing](https://manager.infomaniak.com/v3/ng/products/cloud/public-cloud)
+- OpenStack dashboard: [Horizon](https://api.pub2.infomaniak.cloud/horizon/)
 
-### Using GitHub Actions (no local Go required)
+## Kubernetes
 
-In this repository, run the **Refresh vendored Hugo modules** workflow from the Actions tab.
-It updates the pinned `hugo-styles` release, refreshes the synced maintainer files, refreshes `_vendor/`, and then opens a pull request if anything changed.
+- [Kubernetes documentation](https://kubernetes.io/docs/home/)
+- [OpenStack documentation](https://www.openstack.org/)
 
-### Locally (with Go installed)
-
-```bash
-hugo mod get -u github.com/oer-particle-physics/hugo-styles@latest
-hugo mod tidy
-./scripts/sync-template-files.sh
-hugo mod vendor
-hugo --gc --minify
-```
-
-Commit `go.mod`, `go.sum`, the synced maintainer files, and `_vendor/` together.
-
-## Small copy-paste examples
-
-### LaTeX notation
-
-```markdown
-Inline: \(p_T > 25\,\mathrm{GeV}\)
-
-$$
-N_{\text{sig}} = N_{\text{obs}} - N_{\text{bkg}}
-$$
-```
-
-### Mermaid flow
-
-````markdown
-```mermaid
-flowchart LR
-  A[Reconstruction] --> B[Selection]
-  B --> C[Signal region]
-  B --> D[Control region]
-```
-````
-
-### Shell tabs
-
-~~~text
-{{</* tabs */>}}
-{{</* tab name="bash" selected=true */>}}
-```bash
-hugo server
-```
-{{</* /tab */>}}
-{{</* tab name="zsh" */>}}
-```zsh
-hugo server
-```
-{{</* /tab */>}}
-{{</* /tabs */>}}
-~~~
-
-Keep this page short. Put detailed feature walkthroughs in `hugo-styles` so downstream lesson repositories do not carry framework documentation.

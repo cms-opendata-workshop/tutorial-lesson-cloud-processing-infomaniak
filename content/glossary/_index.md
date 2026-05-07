@@ -3,5 +3,8 @@ title = "Glossary"
 weight = 40
 +++
 
-Add glossary terms here when your tutorial needs a stable vocabulary.
+
+#### [CERN Open Data Portal glossary](https://opendata.cern.ch/search?q=&f=type%3AGlossary&l=list&order=asc&p=1&s=10&sort=title)
+
+#### [Kubernetes glossary](https://kubernetes.io/docs/reference/glossary/?fundamental=true)
 

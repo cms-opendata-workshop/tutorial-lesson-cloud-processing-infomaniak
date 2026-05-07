@@ -22,7 +22,7 @@ The best approach remains to have the same amount of files in each parallel step
 
 ## Cluster and job configuration
 
-### vCPus, memory and disk
+### vCPUs, memory and disk
 
 In [earlier investigations](https://cms-opendata-workshop.github.io/tutorial-lesson-cloud-processing-gcp/06-scaleup.html#run-a-test-job) on Google Cloud Platform, `kubectl top node` and `kubectl top pods` were used to evaluate the resource needs for the processing - the most demanding step in the workflow chain.
 The metrics API is not available on the Infomaniak Kubernetes service, so earlier estimates were used.
