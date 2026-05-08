@@ -24,8 +24,33 @@ The best approach remains to have the same amount of files in each parallel step
 
 ### vCPUs, memory and disk
 
-In [earlier investigations](https://cms-opendata-workshop.github.io/tutorial-lesson-cloud-processing-gcp/06-scaleup.html#run-a-test-job) on Google Cloud Platform, `kubectl top node` and `kubectl top pods` were used to evaluate the resource needs for the processing - the most demanding step in the workflow chain.
-The metrics API is not available on the Infomaniak Kubernetes service, so earlier estimates were used.
+In [earlier investigations](https://cms-opendata-workshop.github.io/tutorial-lesson-cloud-processing-gcp/06-scaleup.html#run-a-test-job) on Google Cloud Platform, `kubectl top node` and `kubectl top pods` were used to evaluate the resources needs for the processing - the most demanding step in the workflow chain. These earlier estimates were used.
+
+{{< callout type="note" title="Metrics Server" >}}
+You can install the Kubernetes Metrics Server needed to run `kubectl top` commands following the instructions on the Metrics Server [documentation page](https://kubernetes-sigs.github.io/metrics-server/).
+
+Note that you will need to download `components.yaml` locally, and add `--kubelet-insecure-tls` to the `args` of the `containers` in the deployment part of the file so that it becomes:
+
+```yaml
+    spec:
+      containers:
+      - args:
+        - --cert-dir=/tmp
+        - --secure-port=10250
+        - --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+        - --kubelet-use-node-status-port
+        - --metric-resolution=15s
+        - --kubelet-insecure-tls
+```
+
+Then do:
+
+```bash
+kubectl apply -f components.yaml
+```
+
+and wait for the server to start. You can check its state with `kubectl get all -n kube-system -l k8s-app=metrics-server`.
+{{< /callout >}}
 
 Without constraints (i.e. other parallel tasks running), the processing jobs take 80% of the available CPU, and require up to 1.8 GB of memory. However, choosing nodes with 4 vCPUs 8 GB memory resulted jobs failing because the node was low on resources. Therefore, nodes with larger memory (16 GB) were chosen.
 

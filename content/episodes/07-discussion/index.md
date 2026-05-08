@@ -29,7 +29,7 @@ Two useful functionalities are currently missing.
 An option to start the cluster nodes with a pre-prepared image disk containing the large CMSSW container image would be very helpful to speed up the job start. It would also avoid repeated image pulls and reduce the risk of hitting the pull limits of image registries. This is not yet available.
 
 ### kubectl top
-To inspect the resource usage of the processing jobs, `kubectl top` commands would offer a handy command-line option. The metrics API needed for it is, however, not available.
+To inspect the resource usage of the processing jobs, [`kubectl top` commands](https://kubernetes.io/docs/reference/kubectl/generated/kubectl_top/) are handy. The metrics server needed for them to work needs to be installed with a minor modification to the default instructions as shown in [Scaling up]({{< relref "/episodes/06-scaleup/#vcpus-memory-and-disk" >}}).
 {{% /steps %}}
 
 
