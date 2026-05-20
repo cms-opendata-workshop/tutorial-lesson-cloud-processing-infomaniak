@@ -21,7 +21,7 @@ The Infomaniak support team replied to questions within expected delays whenever
 
 ## What difficulties were observed?
 
-Two useful functionalities are currently missing. 
+Two useful functionalities are not directly available. 
 
 {{% steps %}}
 

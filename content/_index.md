@@ -1,5 +1,5 @@
 +++
-title = "Example Lesson"
+title = "CMS open data processing - Infomaniak"
 layout = "hextra-home"
 +++
 
